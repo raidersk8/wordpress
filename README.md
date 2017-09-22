@@ -3,9 +3,7 @@
 var file_data = jQuery('#rewrite-maket').prop('files')[0];<br />
 var form_data = new FormData();<br />
 form_data.append('file', file_data);<br />
-form_data.append('action', 'rewrite_makets_action');<br />
-//Имя файла которое хотим заменить<br />
-form_data.append('file-name', $('#tab-pages .tab-content-pages .tab-pane-page.active').data('parse-file'));<br />
+form_data.append('action', 'rewrite_makets_action');
 <br />
 jQuery.ajax({<br />
   url: myajax.url,<br />
